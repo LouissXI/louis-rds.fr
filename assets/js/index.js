@@ -20,7 +20,7 @@ document.getElementById("discord-btn").onclick = function() {openLinkInAnotherTa
 document.getElementById("twitter-btn").onclick = function() {openLinkInAnotherTab("https://twitter.com/louiss_XI")}
 document.getElementById("instagram-btn").onclick = function() {openLinkInAnotherTab("https://instagram.com/louis_ravignot")}
 document.getElementById("spotify-btn").onclick = function() {openLinkInAnotherTab("https://open.spotify.com/user/21wa3isyhcvoxhtdjv2qm4zai")}
-document.getElementById("youtube-btn").onclick = function() {openLinkInAnotherTab("https://www.youtube.com/channel/UCfltZx9e9JVRpxOQR6dazUg")}
+document.getElementById("youtube-btn").onclick = function() {openLinkInAnotherTab("https://www.youtube.com/channel/UCgANb_PGe6Ep0D0Nk5XeIdw")}
 
 function openLinkInAnotherTab(url){
     window.open(url, '_blank').focus()
