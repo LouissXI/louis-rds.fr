@@ -11,7 +11,7 @@ var typewriter = new Typewriter(document.getElementById('writer'), {
     stringSplitter
 });
 
-typewriter.pauseFor(1000).typeString("👋 Hello").start();
+typewriter.pauseFor(1000).typeString("👋 Bonjour").start();
 
 // Buttons
 
