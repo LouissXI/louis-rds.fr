@@ -16,12 +16,12 @@ typewriter.pauseFor(1000).typeString("👋 Bonjour").start();
 // Buttons
 
 document.getElementById("github-btn").onclick = function() {openLinkInAnotherTab("https://github.com/LouissXI")}
-document.getElementById("discord-btn").onclick = function() {openLinkInAnotherTab("https://discord.com/api/oauth2/authorize?client_id=756860663476912208&permissions=8&scope=applications.commands%20bot")}
+document.getElementById("discord-btn").onclick = function() {openLinkInAnotherTab("https://discord.gg/we3WzvFM5C")}
 document.getElementById("twitter-btn").onclick = function() {openLinkInAnotherTab("https://twitter.com/louiss_XI")}
 document.getElementById("instagram-btn").onclick = function() {openLinkInAnotherTab("https://instagram.com/louis_ravignot")}
 document.getElementById("spotify-btn").onclick = function() {openLinkInAnotherTab("https://open.spotify.com/user/21wa3isyhcvoxhtdjv2qm4zai")}
 document.getElementById("youtube-btn").onclick = function() {openLinkInAnotherTab("https://www.youtube.com/channel/UCgANb_PGe6Ep0D0Nk5XeIdw")}
 
-function openLinkInAnotherTab(url){
+function openLinkInAnotherTab(url) {
     window.open(url, '_blank').focus()
 }
