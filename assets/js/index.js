@@ -11,7 +11,17 @@ var typewriter = new Typewriter(document.getElementById('writer'), {
     stringSplitter
 });
 
-typewriter.pauseFor(1000).typeString("👋 Bonjour").start();
+const hour = getHour();
+var stringtoshow;
+if(hour >= 18 || hour < 6) {
+    stringtoshow = "👋 Bonsoir";
+} else if (hour >= 0 || hour < 5) {
+    stringtoshow = "💤Bonne nuit"
+} else {
+    stringtoshow = "👋 Bonjour";
+}
+
+typewriter.pauseFor(1000).typeString(stringtoshow).start();
 
 // Buttons
 
@@ -22,6 +32,14 @@ document.getElementById("instagram-btn").onclick = function() {openLinkInAnother
 document.getElementById("spotify-btn").onclick = function() {openLinkInAnotherTab("https://open.spotify.com/user/21wa3isyhcvoxhtdjv2qm4zai")}
 document.getElementById("youtube-btn").onclick = function() {openLinkInAnotherTab("https://www.youtube.com/channel/UCgANb_PGe6Ep0D0Nk5XeIdw")}
 
+// Utility functions
+
 function openLinkInAnotherTab(url) {
     window.open(url, '_blank').focus()
+}
+
+function getHour() {
+    var d = new Date();
+    var n = d.getHours();
+    return n;
 }
