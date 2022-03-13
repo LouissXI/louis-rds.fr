@@ -13,10 +13,10 @@ var typewriter = new Typewriter(document.getElementById('writer'), {
 
 const hour = getHour();
 var stringtoshow;
-if(hour >= 18 || hour < 6) {
-    stringtoshow = "👋 Bonsoir";
-} else if (hour >= 0 || hour < 5) {
+if (hour >= 0 && hour < 5) {
     stringtoshow = "💤Bonne nuit"
+} else if(hour >= 18 && hour < 6) {
+    stringtoshow = "👋 Bonsoir";
 } else {
     stringtoshow = "👋 Bonjour";
 }
