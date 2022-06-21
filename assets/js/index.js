@@ -15,7 +15,7 @@ const hour = getHour();
 var stringtoshow;
 if (hour >= 0 && hour < 5) {
     stringtoshow = "💤Bonne nuit"
-} else if(hour >= 18 && hour < 6) {
+} else if(hour >= 18) {
     stringtoshow = "👋 Bonsoir";
 } else {
     stringtoshow = "👋 Bonjour";
