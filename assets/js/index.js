@@ -15,7 +15,7 @@ const hour = getHour();
 var stringtoshow;
 if (hour >= 0 && hour < 5) {
     stringtoshow = "💤Bonne nuit"
-} else if(hour >= 18) {
+} else if (hour >= 18) {
     stringtoshow = "👋 Bonsoir";
 } else {
     stringtoshow = "👋 Bonjour";
@@ -30,6 +30,7 @@ document.getElementById("discord-btn").onclick = function() {openLinkInAnotherTa
 document.getElementById("twitter-btn").onclick = function() {openLinkInAnotherTab("https://twitter.com/LouisssXI")}
 document.getElementById("spotify-btn").onclick = function() {openLinkInAnotherTab("https://open.spotify.com/user/21wa3isyhcvoxhtdjv2qm4zai")}
 document.getElementById("youtube-btn").onclick = function() {openLinkInAnotherTab("https://www.youtube.com/channel/UCgANb_PGe6Ep0D0Nk5XeIdw")}
+document.getElementById("instagram-btn").onclick = function() {openLinkInAnotherTab("https://www.instagram.com/louis_ravignot_dos_santos/")}
 document.getElementById("tiktok-btn").onclick = function() {openLinkInAnotherTab("https://www.tiktok.com/@louis.rds")}
 
 // Utility functions

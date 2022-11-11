@@ -62,6 +62,10 @@ html, body {
     filter: invert(60%)
 }
 
+#instagram:hover img {
+    filter: invert(60%)
+}
+
 #tiktok:hover img {
     filter: invert(60%)
 }
